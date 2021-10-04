@@ -49,9 +49,37 @@
   background-color: #c1252f; 
 }
 
+.bg-light-khaki {
+  background-color: #f6e6cd;
+}
+
+.bg-light-khaki-2 {
+  background-color: #fbf3e8;
+}
+
+.bg-light-blue-grey {
+  background-color: #d7e1ee;
+}
+
+.bg-silver{
+  background-color: #e2e9e9;
+}
+
+.bg-beige {
+  background-color: #efe4df;
+}
+
+.bg-beige-2 {
+  background-color: #e5c5b9;
+}
+
 @media only screen and (min-width: 768px) {
   .position-md-absolute {
     position: absolute !important;
+  }
+
+  .w-md-50 {
+    width: 50% !important;
   }
 }
 
@@ -83,7 +111,14 @@ nav img.logo {
   height: auto;
 }
 
-@media only screen and (max-width: 767px) {
+nav a.navbar-item {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #000;
+}
+
+@media only screen and (max-width: 991px) {
   nav {
     background-color: rgba(0, 0, 0, 0.5);
   }
@@ -91,13 +126,6 @@ nav img.logo {
     width: 4rem;
     height: auto;
   }
-}
-
-nav a.navbar-item {
-  text-decoration: none;
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: #000;
 }
 
 /* heading stripe section */
@@ -119,4 +147,68 @@ nav a.navbar-item {
   max-width: 34rem;
   width: 100%;
   height: auto;
+}
+
+/* grid section */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-auto-rows: 1fr;
+  grid-auto-flow: dense;
+}
+
+.tile-squared {
+  grid-row: span 2;
+  /* padding-bottom: 100%; */
+}
+
+.tile-large {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.tile-number {
+  font-family: NeutraDisplay;
+  font-size: 2.8rem;
+}
+
+.grid-tile.tile-squared .text-container {
+  max-width: 80%;
+}
+
+.tile-landscape .image-container,
+.tile-large .image-container {
+  min-width: 50%;
+}
+
+.tile-squared .tile-number,
+.tile-large .tile-number {
+  font-size: 5rem;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .grid {
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  .tile-squared,
+  .tile-landscape,
+  .tile-large {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+
+  .grid-tile .text-container {
+    max-width: 100%;
+  }
+
+  .grid-tile.tile-squared .text-container {
+    max-width: 100%;
+  }
 }
