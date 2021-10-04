@@ -1,0 +1,122 @@
+/* fonts */
+@font-face {
+  font-weight: 300;
+  font-family: "NeutraText";
+  src: url("fonts/Neutra\ Text/book.woff") format("woff"), url("fonts/Neutra\ Text/book.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "NeutraText";
+  src: url("fonts/Neutra\ Text/bold.woff") format("woff"), url("fonts/Neutra\ Text/bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: "NeutraDisplay";
+  src: url("fonts/Neutra\ Display/titling.woff") format("woff"), url("fonts/Neutra\ Display/titling.woff2") format("woff2");
+}
+
+/* reset */
+* body {
+  font-family: NeutraText;
+  font-size: 1.5rem;
+}
+
+/* utils */
+.bg-cover-center {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-painting {
+  background-image: url(./images/stripe-background.png);
+}
+
+.position-absolute-center {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.text-red {
+  color: #c1252f;
+}
+
+.bg-red {
+  background-color: #c1252f; 
+}
+
+@media only screen and (min-width: 768px) {
+  .position-md-absolute {
+    position: absolute !important;
+  }
+}
+
+/* text */
+h2 {
+  font-size: 3.125rem;
+  font-family: NeutraDisplay;
+}
+
+h3 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+/* header section */
+nav {
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+nav img.logo {
+  width: 8rem;
+  height: auto;
+}
+
+@media only screen and (max-width: 767px) {
+  nav {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  nav img.logo {
+    width: 4rem;
+    height: auto;
+  }
+}
+
+nav a.navbar-item {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #000;
+}
+
+/* heading stripe section */
+#heading-stripe {
+  background-image: url('./images/header-background.jpg');
+}
+
+#logo-5-stagioni {
+  width: 18rem;
+  height: auto;
+}
+
+.layer {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+/* two col section */
+.two-col-image {
+  max-width: 34rem;
+  width: 100%;
+  height: auto;
+}
