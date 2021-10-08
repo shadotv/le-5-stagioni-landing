@@ -142,6 +142,12 @@ nav a.navbar-item {
   color: #000;
 }
 
+.navbar-toggler {
+  font-size: 1.5rem;
+  border: none;
+  padding: 0;
+}
+
 @media only screen and (max-width: 991px) {
   nav {
     background-color: rgba(0, 0, 0, 0.5);
