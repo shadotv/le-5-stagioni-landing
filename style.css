@@ -97,6 +97,14 @@
   .w-md-50 {
     width: 50% !important;
   }
+
+  .w-md-75 {
+    width: 75% !important;
+  }
+
+  .w-md-100 {
+    width: 100% !important;
+  }
 }
 
 /* text */
@@ -199,7 +207,7 @@ nav a.navbar-item {
 
 .tile-squared .tile-number,
 .tile-large .tile-number {
-  font-size: 5rem;
+  font-size: 4.5rem;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -208,13 +216,14 @@ nav a.navbar-item {
   }
 }
 
+/* media breakpoint down sm */
 @media only screen and (max-width: 991px) {
   .grid {
     grid-template-columns: repeat(1,1fr);
   }
 
   .tile-number {
-    font-size: 5rem;
+    font-size: 3rem !important;
   }
 
   .tile-squared,
