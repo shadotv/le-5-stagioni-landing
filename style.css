@@ -127,6 +127,16 @@ h4 {
   font-size: 2rem;
 }
 
+@media only screen and (max-width: 991px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+.font-neutra-display {
+  font-family: NeutraDisplay;
+}
+
 /* header section */
 nav {
   top: 0;
@@ -253,7 +263,6 @@ nav a.navbar-item {
 }
 
 /* footer section */
-
 footer a {
   font-size: .875rem;
   color: black;
