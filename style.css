@@ -45,6 +45,10 @@
   color: #c1252f;
 }
 
+.link-black:hover {
+  color: #c1252f;
+}
+
 .bg-red {
   background-color: #c1252f; 
 }
@@ -249,9 +253,7 @@ nav a.navbar-item {
 }
 
 /* footer section */
-footer {
-  padding-bottom: 4rem;
-}
+
 footer a {
   font-size: .875rem;
   color: black;
@@ -260,4 +262,8 @@ footer a {
 
 footer a:hover {
   color:rgba(0, 0, 0, 0.5)
+}
+
+footer a.social-icon {
+  font-size: calc(1.2625rem + .15vw);
 }
