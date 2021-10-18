@@ -30,6 +30,27 @@
   background-repeat: no-repeat;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
+.video-16by9 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.video-16by9 video,
+.video-16by9 iframe {
+    height: 56.25vw;
+    width: 177.78vh;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
 .bg-painting {
   background-image: url(./images/stripe-background.png);
 }
@@ -145,8 +166,8 @@ nav {
 }
 
 nav img.logo {
-  height: 7.87rem;
-  width: auto;
+  height: auto;
+  width: 10rem;
 }
 
 nav a.navbar-item {
@@ -163,12 +184,21 @@ nav a.navbar-item {
 }
 
 @media only screen and (max-width: 991px) {
-  nav {
-    background-color: rgba(0, 0, 0, 0.5);
+  nav#navbar {
+    transition: background-color 0.25s;
   }
+  
+  nav#navbar.background {
+    background-color: rgba(0, 0, 0, 0.85);
+  }
+
   nav img.logo {
     width: 4rem;
     height: auto;
+  }
+
+  nav a.navbar-item {
+    font-size: .9rem;
   }
 }
 
@@ -183,7 +213,7 @@ nav a.navbar-item {
 }
 
 .layer {
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 /* two col section */

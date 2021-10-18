@@ -14,56 +14,87 @@
 
     <!-- SEO -->
     <title>Le 5 stagioni</title>
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">  
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- Custom js -->
+    <script lang="javascript">
+      function toggleNavbarBackground() {
+        const navbar = document.getElementById("navbar");
+        navbar.classList.toggle("background");
+      }
+      function initVideoLoop() {
+        const video = document.getElementById("videoloop");
+        video.onended = () => {
+          video.currentTime = 0;
+          vide.play();
+        }
+      }
+    </script>
   </head>
   <body>
     <!-- HEADING -->
-    <div class="container-fluid position-relative vh-100 bg-cover-center d-flex flex-column justify-content-center align-items-center" id="heading-stripe">
-      <div class="position-absolute position-absolute-center layer"></div>
-      <nav class="navbar navbar-expand-lg navbar-dark p-3 p-lg-5 mx-lg-4 d-flex align-items-center position-absolute">
-
-        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="bi bi-list"></i>
-        </button>
-
-        <h1 class="me-md-5">
-          <a href="https://pizzastories.le5stagioni.it/">
-            <img class="logo" src="images/pizza-stories-logo-white.svg">
-          </a>
-        </h1>
-
-        <a href="https://pizzastories.le5stagioni.it/ricette" class="d-lg-none text-white">
-          <i class="bi bi-search"></i>
-        </a>
-        
-        <div class="collapse navbar-collapse py-md-0" id="mainNavbar">
-          <ul class="navbar-nav py-3 py-lg-0">
-            <li class="nav-item">
-              <a class="px-lg-4 mx-xl-2 navbar-item text-white" href="https://pizzastories.le5stagioni.it/it/prodotti">le FARINE</a>
-            </li>
-            <li class="nav-item">
-              <a class="px-lg-4 mx-xl-2 navbar-item text-white" href="https://pizzastories.le5stagioni.it/it/magazine">il MAGAZINE</a>
-            </li>
-            <li class="nav-item">
-              <a class="px-lg-4 mx-xl-2 navbar-item text-white" href="https://pizzastories.le5stagioni.it/it/ricette">le RICETTE</a>
-            </li>
-            <li class="nav-item">
-              <a class="px-lg-4 mx-xl-2 navbar-item text-white" href="https://pizzastories.le5stagioni.it/it/community">la COMMUNITY</a>
-            </li>
-            <li class="nav-item">
-              <a class="px-lg-4 mx-xl-2 navbar-item text-white" href="https://pizzastories.le5stagioni.it/it/5-stagioni">le 5 STAGIONI</a>
-            </li>
-            <li class="nav-item">
-              <a class="px-lg-4 mx-xl-2 navbar-item text-white" href="https://pizzastories.le5stagioni.it/it/supporto">CONTATTACI</a>
-            </li>
-          </ul>
+    <div class="container-fluid position-relative vh-100 bg-cover-center" id="heading-stripe">
+      <div class="position-absolute position-absolute-center overflow-hidden">
+        <div class="video-16by9 position-absolute-center h-100vh">
+          <video loop playsinline muted autoplay id="videoloop">
+            <source src="images/loop_1.mp4" type="video/mp4">
+          </video>
         </div>
-      </nav>
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-8 text-center">
-          <img class="mb-4" src="./images/5-stagioni-logo.svg" id="logo-5-stagioni"/>
-          <h2 class="text-white">La passione per la pizza</h2>
-          <h4 class="text-white">La storica gamma di farine, miscele e lieviti dedicate a tutti gli utilizzi in pizzeria.</h4>
+      </div>
+      <div class="position-absolute position-absolute-center layer"></div>
+      <div class="position-absolute position-absolute-center d-flex flex-column justify-content-center align-items-center">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark p-3 p-lg-5 mx-lg-4 d-flex justify-content-between align-items-center position-absolute">
+          
+          <div class="d-lg-none position-relative">
+            <!-- NOTE: this item acts as placeholder only -->
+            <div class="nav-item hidden">
+              <a class="px-lg-4 mx-xl-2 navbar-item text-white" href="https://pizzastories.le5stagioni.it">PIZZASTORIES.it</a>
+            </div>
+            <div class="position-absolute position-absolute-center d-flex align-items-center">
+              <button onclick="toggleNavbarBackground()" class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+              </button>
+            </div>
+          </div>
+  
+          <h1 class="me-md-5">
+            <a href="https://pizzastories.le5stagioni.it/">
+              <img class="logo" src="images/5-stagioni-logo.svg">
+            </a>
+          </h1>
+  
+          <div class="nav-item d-lg-none">
+            <a class="px-lg-4 mx-xl-2 navbar-item text-white" href="https://pizzastories.le5stagioni.it">PIZZASTORIES.it</a>
+          </div>
+          
+          <div class="collapse navbar-collapse py-md-0 justify-content-end" id="mainNavbar">
+            <ul class="navbar-nav py-3 py-lg-0">
+              <li class="nav-item">
+                <a class="px-lg-4 mx-xl-2 navbar-item text-white" href="https://pizzastories.le5stagioni.it/it/prodotti">le FARINE</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="px-lg-4 mx-xl-2 navbar-item text-white" href="https://pizzastories.le5stagioni.it/it/magazine">il MAGAZINE</a>
+              </li>
+              <li class="nav-item">
+                <a class="px-lg-4 mx-xl-2 navbar-item text-white" href="https://pizzastories.le5stagioni.it/it/ricette">le RICETTE</a>
+              </li>
+              <li class="nav-item">
+                <a class="px-lg-4 mx-xl-2 navbar-item text-white" href="https://pizzastories.le5stagioni.it/it/community">la COMMUNITY</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="px-lg-4 mx-xl-2 navbar-item text-white" href="https://pizzastories.le5stagioni.it/it/supporto">CONTATTACI</a>
+              </li>
+              <li class="nav-item d-none d-lg-block">
+                <a class="px-lg-4 mx-xl-2 navbar-item text-white" href="https://pizzastories.le5stagioni.it">PIZZASTORIES.it</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 text-center">
+            <h2 class="text-white">La passione per la pizza</h2>
+            <h4 class="text-white">La storica gamma di farine, miscele e lieviti dedicate a tutti gli utilizzi in pizzeria.</h4>
+          </div>
         </div>
       </div>
     </div>
