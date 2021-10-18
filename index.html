@@ -22,13 +22,6 @@
         const navbar = document.getElementById("navbar");
         navbar.classList.toggle("background");
       }
-      function initVideoLoop() {
-        const video = document.getElementById("videoloop");
-        video.onended = () => {
-          video.currentTime = 0;
-          vide.play();
-        }
-      }
     </script>
   </head>
   <body>
@@ -37,7 +30,7 @@
       <div class="position-absolute position-absolute-center overflow-hidden">
         <div class="video-16by9 position-absolute-center h-100vh">
           <video loop playsinline muted autoplay id="videoloop">
-            <source src="images/loop_1.mp4" type="video/mp4">
+            <source src="images/loop_2_ok.mp4" type="video/mp4">
           </video>
         </div>
       </div>
