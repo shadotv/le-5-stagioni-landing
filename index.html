@@ -1,455 +1,479 @@
-<!doctype html>
 <html lang="it">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Custom stylesheet -->
-    <link href="style.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-    <!-- SEO -->
-    <title>Le 5 stagioni</title>
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <!-- Custom stylesheet -->
+  <link href="style.css" rel="stylesheet">
 
-    <!-- Custom js -->
-    <script lang="javascript">
-      function toggleNavbarBackground() {
-        const navbar = document.getElementById("navbar");
-        navbar.classList.toggle("background");
-      }
-    </script>
-  </head>
-  <body>
-    <!-- HEADING -->
-    <div class="container-fluid position-relative vh-75 bg-cover-center" id="heading-stripe">
-      <div class="position-absolute position-absolute-center overflow-hidden">
-        <div class="video-16by9 position-absolute-center h-100vh">
-          <video loop playsinline muted autoplay id="videoloop">
-            <source src="images/loop_2_ok.mp4" type="video/mp4">
-          </video>
-        </div>
+  <!-- SEO -->
+  <title>Le 5 stagioni</title>
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+  <!-- Custom js -->
+  <script lang="javascript">
+    function toggleNavbarBackground() {
+      const navbar = document.getElementById("navbar");
+      navbar.classList.toggle("background");
+    }
+  </script>
+</head>
+
+<body>
+  <!-- HEADING -->
+  <div class="container-fluid position-relative vh-75 bg-cover-center" id="heading-stripe">
+    <div class="position-absolute position-absolute-center overflow-hidden">
+      <div class="video-16by9 position-absolute-center h-100vh">
+        <video loop="" playsinline="" muted="" autoplay="" id="videoloop">
+          <source src="images/loop_2_ok.mp4" type="video/mp4">
+        </video>
       </div>
-      <div class="position-absolute position-absolute-center layer"></div>
-      <div class="position-absolute position-absolute-center d-flex flex-column justify-content-center align-items-center">
-        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark p-3 p-lg-5 mx-lg-4 d-flex justify-content-between align-items-center position-absolute">
-          
-          <div class="d-lg-none position-relative pb-4">
-            <!-- NOTE: this item acts as placeholder only -->
-            <div class="nav-item hidden">
-              <a class="px-lg-4 mx-xl-2 navbar-item text-white" href="https://pizzastories.le5stagioni.it">PIZZASTORIES.it</a>
-            </div>
-            <div class="position-absolute position-absolute-center d-flex align-items-center">
-              <button onclick="toggleNavbarBackground()" class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="bi bi-list"></i>
-              </button>
-            </div>
+    </div>
+    <div class="position-absolute position-absolute-center layer"></div>
+    <div
+      class="position-absolute position-absolute-center d-flex flex-column justify-content-center align-items-center">
+      <nav id="navbar"
+        class="navbar navbar-expand-lg navbar-dark p-3 p-lg-5 mx-lg-4 d-flex justify-content-between align-items-center position-absolute">
+
+        <div class="d-lg-none position-relative pb-4">
+          <!-- NOTE: this item acts as placeholder only -->
+          <div class="nav-item hidden">
+            <a class="px-lg-4 mx-xl-2 navbar-item text-white"
+              href="https://pizzastories.le5stagioni.it">PIZZASTORIES.it</a>
           </div>
-  
-          <h1 class="me-md-5">
-            <a href="/">
-              <img class="logo" src="images/5-stagioni-logo.svg">
-            </a>
-          </h1>
-  
-          <div class="nav-item d-lg-none">
-            <a class="px-lg-4 mx-xl-2 navbar-item text-white" href="https://pizzastories.le5stagioni.it">PIZZASTORIES.it</a>
+          <div class="position-absolute position-absolute-center d-flex align-items-center">
+            <button onclick="toggleNavbarBackground()" class="navbar-toggler text-white" type="button"
+              data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <i class="bi bi-list"></i>
+            </button>
           </div>
-          
-          <div class="collapse navbar-collapse py-md-0 justify-content-end" id="mainNavbar">
-            <ul class="navbar-nav py-3 py-lg-0">
-              <li class="nav-item mx-xl-2">
-                <a class="px-lg-4 navbar-item text-white" href="https://pizzastories.le5stagioni.it/it/prodotti">le FARINE</a>
-              </li>
-              <li class="nav-item mx-xl-2">
-                <a class="px-lg-4 navbar-item text-white" href="https://pizzastories.le5stagioni.it/it/supporto">CONTATTACI</a>
-              </li>
-              <li class="nav-item mx-xl-2 d-none d-lg-block">
-                <a class="px-lg-4 navbar-item text-white" href="https://pizzastories.le5stagioni.it">PIZZASTORIES.it</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-8 text-center">
-            <h2 class="text-white">La passione per la pizza</h2>
-            <h4 class="text-white">La storica gamma di farine, miscele e lieviti dedicate a tutti gli utilizzi in pizzeria.</h4>
-          </div>
+        </div>
+
+        <h1 class="me-md-5">
+          <a href="/">
+            <img class="logo" src="images/5-stagioni-logo.svg">
+          </a>
+        </h1>
+
+        <div class="nav-item d-lg-none">
+          <a class="px-lg-4 mx-xl-2 navbar-item text-white"
+            href="https://pizzastories.le5stagioni.it">PIZZASTORIES.it</a>
+        </div>
+
+        <div class="collapse navbar-collapse py-md-0 justify-content-end" id="mainNavbar">
+          <ul class="navbar-nav py-3 py-lg-0">
+            <li class="nav-item mx-xl-2">
+              <a class="px-lg-4 navbar-item text-white" href="https://pizzastories.le5stagioni.it/it/prodotti">le
+                FARINE</a>
+            </li>
+            <li class="nav-item mx-xl-2">
+              <a class="px-lg-4 navbar-item text-white"
+                href="https://pizzastories.le5stagioni.it/it/supporto">CONTATTACI</a>
+            </li>
+            <li class="nav-item mx-xl-2 d-none d-lg-block">
+              <a class="px-lg-4 navbar-item text-white" href="https://pizzastories.le5stagioni.it">PIZZASTORIES.it</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 text-center">
+          <h2 class="text-white">La passione per la pizza</h2>
+          <h4 class="text-white">La storica gamma di farine, miscele e lieviti dedicate a tutti gli utilizzi in
+            pizzeria.</h4>
         </div>
       </div>
     </div>
-    <!-- STRIPE ONE COL -->
-    <div class="bg-painting bg-cover-center py-5">
-      <div class="container py-md-4">
-        <div class="row justify-content-center">
-          <div class="col-12 px-3">
-            <h3 class="text-red text-center fw-bold font-neutra-display">Trasformiamo il grano<br class="d-none d-md-block"/> in farina dal XV secolo</h3>
-          </div>
-          <div class="col-12 col-md-10 col-xl-8 px-3">
-            Siamo mugnai da 6 generazioni e tramandiamo la nostra passione per la pizza con professionalità e rispetto. Selezioniamo i grani dalle migliori coltivazioni del mondo e seguiamo ogni passaggio del processo di produzione con attenzione e cura, per garantire un prodotto finale di altissima qualità.
-          </div>
+  </div>
+  <!-- STRIPE ONE COL -->
+  <div class="bg-painting bg-cover-center py-5">
+    <div class="container py-md-4">
+      <div class="row justify-content-center">
+        <div class="col-12 px-3">
+          <h3 class="text-red text-center fw-bold font-neutra-display">Tradizione e innovazione<br
+              class="d-none d-md-block">per le tue pizze</h3>
+        </div>
+        <div class="col-12 col-md-10 col-xl-8 px-3">
+          Dalla selezione dei grani alla produzione della farina, siamo partiti da molto lontano per ottenere farine di
+          altissima qualità che siano in grado di garantire la produzione di pizze di qualità superiore, grazie alla
+          costante ricerca, l’innovazione e materie prime lavorate con le tecnologie più avanzate.
         </div>
       </div>
     </div>
-    <!-- STRIPE TWO COL -- 1 -->
-    <div class="bg-red position-relative">
-      <div class="position-inline position-md-absolute position-absolute-center d-flex align-items-center">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-6 text-white py-5 px-3">
-              <h2 class="mb-4">
-                LA PIZZA MIGLIORE RICHIEDE LE FARINE MIGLIORI
-              </h2>
-              <div>
-                Le 5 Stagioni è la più completa e versatile gamma di farine per pizza. Selezioniamo i grani dalle migliore coltivazioni del mondo, trattiamo le materie prime con le tecnologie più innovative, rispettando le qualità organolettiche del chicco.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid">
-        <div class="row justify-content-end">
-          <div class="col-12 col-md-6 p-3 d-flex justify-content-center">
-            <img src="images/stripes/two-col-1/image.png" class="two-col-image m-2"/>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- GRID -- 1 -->
-    <div class="bg-painting bg-cover-center p-md-5 py-5">
-      <div class="container-fluid py-md-4 px-2">
-        <div class="grid">
-          <!-- tile 1 - squared -->
-          <div class="grid-tile bg-silver tile-squared">
-            <div class="p-3 p-md-4 h-100 d-flex flex-column justify-content-between">
-              <div class="image-container d-flex justify-content-end">
-                <div class="w-50 w-md-75">
-                  <img class="img-fluid" src="images/stripes/grid-1/tile-1-image.png"/>
-                </div>
-              </div>
-              <div class="text-container">
-                <div class="tile-number">
-                  1°
-                </div>
-                <span>
-                  Brand di farine dedicato alla produzione di pizza
-                </span>
-              </div>
-            </div>
-          </div>
-          <!-- tile 2 - landscape -->
-          <div class="grid-tile bg-light-tan tile-landscape">
-            <div class="p-3 p-md-4  h-100 d-flex justify-content-between align-items-end flex-wrap">
-              <div class="text-container w-100 w-md-50 order-2 order-md-1">
-                <div class="tile-number">
-                  2
-                </div>
-                <span>
-                  Linee di livieti madre ad alto potere lievitante
-                </span>
-              </div>
-              <div class="image-container align-self-start w-100 w-md-50 d-flex justify-content-end order-1 order-md-2">
-                <div class="w-50 w-md-100">
-                  <img class="img-fluid" src="images/stripes/grid-1/tile-2-image.png"/>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- tile 4 - landscape -->
-          <div class="grid-tile bg-beige-4 tile-landscape">
-            <div class="p-3 p-md-4  h-100 d-flex justify-content-between align-items-end flex-wrap">
-              <div class="text-container w-100 w-md-50 order-2 order-md-1">
-                <div class="tile-number">
-                  96
-                </div>
-                <span>
-                  Paesi nel mondo serviti dalle nostre farine
-                </span>
-              </div>
-              <div class="image-container align-self-start w-100 w-md-50 d-flex justify-content-end order-1 order-md-2">
-                <div class="w-50 w-md-100">
-                  <img class="img-fluid" src="images/stripes/grid-1/tile-4-image.png"/>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- tile 3 - landscape -->
-          <div class="grid-tile bg-beige-3 tile-landscape">
-            <div class="p-3 p-md-4  h-100 d-flex justify-content-between align-items-end flex-wrap">
-              <div class="text-container w-100 w-md-50 order-2 order-md-1">
-                <div class="tile-number">
-                  1
-                </div>
-                <span>
-                  Impianto produzione interno di Lievito madre Essiccato
-                </span>
-              </div>
-              <div class="image-container align-self-start w-100 w-md-50 d-flex justify-content-end order-1 order-md-2">
-                <div class="w-50 w-md-100">
-                  <img class="img-fluid" src="images/stripes/grid-1/tile-3-image.png"/>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- tile 5 - landscape -->
-          <div class="grid-tile bg-light-blue-grey-2 tile-landscape">
-            <div class="p-3 p-md-4  h-100 d-flex justify-content-between align-items-end flex-wrap">
-              <div class="text-container w-100 w-md-50 order-2 order-md-1">
-                <div class="tile-number">
-                  20
-                </div>
-                <span>
-                  Partner tecnici in tutta Italia
-                </span>
-              </div>
-              <div class="image-container align-self-start w-100 w-md-50 d-flex justify-content-end order-1 order-md-2">
-                <div class="w-50 w-md-100">
-                  <img class="img-fluid" src="images/stripes/grid-1/tile-5-image.png"/>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- tile 6 - large -->
-          <div class="grid-tile bg-beige-2 tile-large">
-            <div class="p-3 p-md-4  h-100 d-flex justify-content-between align-items-end flex-wrap">
-              <div class="text-container w-100 w-md-50 order-2 order-md-1">
-                <div class="tile-number">
-                  35
-                </div>
-                <span>
-                  Referenze dedicate ai diversi utilizzi in pizzeria e dell’arte bianca
-                </span>
-              </div>
-              <div class="image-container align-self-start w-100 w-md-50 d-flex justify-content-end order-1 order-md-2">
-                <div class="w-50 w-md-100">
-                  <img class="img-fluid" src="images/stripes/grid-1/tile-6-image.png"/>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- tile 7 - squared -->
-          <div class="grid-tile bg-light-khaki tile-squared">
-            <div class="p-3 p-md-4 h-100 d-flex flex-column justify-content-between">
-              <div class="image-container d-flex justify-content-end">
-                <div class="w-50 w-md-75">
-                  <img class="img-fluid" src="images/stripes/grid-1/tile-7-image.png"/>
-                </div>
-              </div>
-              <div class="text-container">
-                <div class="tile-number d-flex align-items-start">
-                  1<small style="font-size: 2rem;">a</small>
-                </div>
-                <span>
-                  Community web dedicata ad appassionati e professionisti della pizza
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- STRIPE TWO COL -- 2 -->
-    <div class="bg-red position-relative">
-      <div class="position-inline position-md-absolute position-absolute-center d-flex align-items-center">
-        <div class="container">
-          <div class="row flex-row-reverse">
-            <div class="col-12 col-md-6 text-white py-5 px-3">
-              <h2 class="mb-4">
-                LE 5 STAGIONI DEL NOSTRO CONTROLLO QUALITÀ
-              </h2>
-              <div>
-                Crediamo che gusto e benessere vadano di pari passo, per questo ci assicuriamo che la lavorazione delle materie prime e la macinazione dei grani avvengano nella più totale sicurezza.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid">
-        <div class="row justify-content-start">
-          <div class="col-12 col-md-6 p-3 d-flex justify-content-center">
-            <img src="images/stripes/two-col-2/image.png" class="two-col-image m-2"/>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- GRID -- 2 -->
-    <div class="bg-painting bg-cover-center p-md-5 py-5">
-      <div class="container-fluid py-md-4 px-2">
-        <div class="grid">
-          <!-- tile 1 - squared -->
-          <div class="grid-tile bg-light-khaki tile-squared">
-            <div class="p-3 p-md-4  h-100 d-flex flex-column justify-content-between">
-              <div class="image-container align-self-start d-flex justify-content-end">
-                <div class="w-50 w-md-75">
-                  <img class="img-fluid" src="images/stripes/grid-2/tile-1-image.png"/>
-                </div>
-              </div>
-              <div class="text-container">
-                <div class="tile-number">
-                  1
-                </div>
-                <span>
-                  Centro di Ricerca & Sviluppo dedicato al mondo dei lievitati in pizzeria
-                </span>
-              </div>
-            </div>
-          </div>
-          <!-- tile 2 - squared -->
-          <div class="grid-tile bg-light-blue-grey tile-squared">
-            <div class="p-3 p-md-4  h-100 d-flex flex-column justify-content-between">
-              <div class="image-container d-flex justify-content-end">
-                <div class="w-50 w-md-75">
-                  <img class="img-fluid" src="images/stripes/grid-2/tile-2-image.png"/>
-                </div>
-              </div>
-              <div class="text-container">
-                <div class="tile-number">
-                  3
-                </div>
-                <span>
-                  Tecnici Resident dedicati allo studio e alla promozione di farine e miscele per la pizza
-                </span>
-              </div>
-            </div>
-          </div>
-          <!-- tile 3 - landscape -->
-          <div class="grid-tile bg-beige tile-landscape">
-            <div class="p-3 p-md-4  h-100 d-flex justify-content-between align-items-end flex-wrap">
-              <div class="text-container w-100 w-md-50 order-2 order-md-1">
-                <div class="tile-number">
-                  <small>300.000</small>
-                </div>
-                <span>
-                  insaccate al giorno
-                </span>
-              </div>
-              <div class="image-container align-self-start w-100 w-md-50 d-flex justify-content-end order-1 order-md-2">
-                <div class="w-50 w-md-100">
-                  <img class="img-fluid" src="images/stripes/grid-2/tile-3-image.png"/>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- tile 4 - landscape -->
-          <div class="grid-tile bg-light-khaki-2 tile-landscape">
-            <div class="p-3 p-md-4  h-100 d-flex justify-content-between align-items-end flex-wrap">
-              <div class="text-container w-100 w-md-50 order-2 order-md-1">
-                <div class="tile-number">
-                  100%
-                </div>
-                <span>
-                  Energia proveniente da fonti rinnovabili per la produzione
-                </span>
-              </div>
-              <div class="image-container align-self-start w-100 w-md-50 d-flex justify-content-end order-1 order-md-2">
-                <div class="w-50 w-md-100">
-                  <img class="img-fluid" src="images/stripes/grid-2/tile-4-image.png"/>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- tile 5 - large -->
-          <div class="grid-tile bg-beige-2 tile-large">
-            <div class="p-3 p-md-4  h-100 d-flex justify-content-between align-items-end flex-wrap">
-              <div class="text-container w-100 w-md-50 order-2 order-md-1">
-                <div class="tile-number">
-                  2
-                </div>
-                <span>
-                  Mulini a Cilindri per diversificare la produzione e mantenere alti i livelli di qualità delle farine
-                </span>
-              </div>
-              <div class="image-container align-self-start w-100 w-md-50 d-flex justify-content-end order-1 order-md-2">
-                <div class="w-50 w-md-100">
-                  <img class="img-fluid" src="images/stripes/grid-2/tile-5-image.png"/>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- tile 6 - squared -->
-          <div class="grid-tile bg-silver tile-squared">
-            <div class="p-3 p-md-4 h-100 d-flex flex-column justify-content-between">
-              <div class="image-container d-flex justify-content-end">
-                <div class="w-50 w-md-75">
-                  <img class="img-fluid" src="images/stripes/grid-2/tile-6-image.png"/>
-                </div>
-              </div>
-              <div class="text-container">
-                <div class="tile-number">
-                  100%
-                </div>
-                <span>
-                  della carta utilizzata nei processi di insacco certificata FSC
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- STRIPE TWO COL -- 3 -->
-    <div class="bg-red position-relative">
-      <div class="position-inline position-md-absolute position-absolute-center d-flex align-items-center">
-        <div class="container">
-          <div class="row flex-row-reverse">
-            <div class="col-12 col-md-6 text-white py-5 px-3">
-              <h2 class="mb-4">
-                UNA FARINA AMICA DELL’AMBIENTE
-              </h2>
-              <div>
-                Per fare le nostre farine utilizziamo solo energia proveniente da fonti rinnovabili. Rispettiamo il territorio che ci circonda e ci fornisce materie prime di così alta qualità, contribuendo a rendere le nostre farine un prodotto d’eccellenza.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid">
-        <div class="row justify-content-start">
-          <div class="col-12 col-md-6 p-3 d-flex justify-content-center">
-            <img src="images/stripes/two-col-3/image.png" class="two-col-image m-2"/>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- FOOTER -->
-    <footer class="bg-white">
+  </div>
+  <!-- STRIPE TWO COL -- 1 -->
+  <div class="bg-red position-relative">
+    <div class="position-inline position-md-absolute position-absolute-center d-flex align-items-center">
       <div class="container">
-        <div class="row m-0 py-4 my-1 justify-content-md-between flex-column-reverse flex-md-row">
-          <div class="col-12 col-md-8 px-0 d-flex flex-column flex-md-row flex-md-wrap align-items-center">
-            <div class="my-2">
-              <a href="https://pizzastories.le5stagioni.it/it/discovery/pizza-stories-raccontiamo-una-passione" target="_blank" class="link-black me-3 font-sm">Cos'è Pizza Stories</a>
-            </div>
-            <div class="my-2">
-              <a href="https://d2sj0xby2hzqoy.cloudfront.net/cinque_stagioni/attachments/data/000/000/325/original/privacy-policy.pdf?1604048791" target="_blank" class="link-black me-3 font-sm">Privacy & Cookie Policy</a>
-            </div>
-            <div class="my-2">
-              <a href="https://d2sj0xby2hzqoy.cloudfront.net/cinque_stagioni/attachments/data/000/000/324/original/note-legali.pdf?1604048725" target="_blank" class="link-black me-3 font-sm">Note Legali</a>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 d-flex justify-content-md-end align-items-center justify-content-center mb-3 mb-md-0 px-0">
-            <div class="ms-md-4 mx-2 px-1 me-md-0 me-md-0">
-              <a href="https://www.facebook.com/le5stagioniofficial" target="_blank" class="link-black social-icon">
-                <i class="bi bi-facebook"></i>
-              </a>
-            </div>
-            <div class="ms-md-4 mx-2 px-1 me-md-0 me-md-0">
-              <a href="https://www.instagram.com/le5stagioni/?hl=it" target="_blank" class="link-black social-icon">
-                <i class="bi bi-instagram"></i>
-              </a>
-            </div>
-            <div class="ms-md-4 mx-2 px-1 me-md-0 me-md-0">
-              <a href="https://www.youtube.com/user/agugiaro1" target="_blank" class="link-black social-icon">
-                <i class="bi bi-youtube"></i>
-              </a>
+        <div class="row">
+          <div class="col-12 col-md-6 text-white py-5 px-3">
+            <h2 class="mb-4">
+              LA PIZZA MIGLIORE RICHIEDE FARINE BUONE </h2>
+            <div>Le farine Le 5 Stagioni sono state pensate e create per adattarsi alle diverse esigenze dei
+              professionisti. Lavoriamo ogni giorno per offrire sfarinati che possano rendere la pizza sempre più buona,
+              gustosa e dare la possibilità ai pizzaioli di sperimentare.
+
             </div>
           </div>
         </div>
       </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  </body>
+    </div>
+    <div class="container-fluid">
+      <div class="row justify-content-end">
+        <div class="col-12 col-md-6 p-3 d-flex justify-content-center">
+          <img src="images/stripes/two-col-1/image.png" class="two-col-image m-2">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- GRID -- 1 -->
+  <div class="bg-painting bg-cover-center p-md-5 py-5">
+    <div class="container-fluid py-md-4 px-2">
+      <div class="grid">
+        <!-- tile 1 - squared -->
+        <div class="grid-tile bg-silver tile-squared">
+          <div class="p-3 p-md-4 h-100 d-flex flex-column justify-content-between">
+            <div class="image-container d-flex justify-content-end">
+              <div class="w-50 w-md-75">
+                <img class="img-fluid" src="images/stripes/grid-1/tile-1-image.png">
+              </div>
+            </div>
+            <div class="text-container">
+              <div class="tile-number">
+                1°
+              </div>
+              <span>
+                Brand di farine dedicato alla produzione di pizza
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- tile 2 - landscape -->
+        <div class="grid-tile bg-light-tan tile-landscape">
+          <div class="p-3 p-md-4  h-100 d-flex justify-content-between align-items-end flex-wrap">
+            <div class="text-container w-100 w-md-50 order-2 order-md-1">
+              <div class="tile-number">
+                2
+              </div>
+              <span>
+                Linee di livieti madre ad alto potere lievitante
+              </span>
+            </div>
+            <div class="image-container align-self-start w-100 w-md-50 d-flex justify-content-end order-1 order-md-2">
+              <div class="w-50 w-md-100">
+                <img class="img-fluid" src="images/stripes/grid-1/tile-2-image.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- tile 4 - landscape -->
+        <div class="grid-tile bg-beige-4 tile-landscape">
+          <div class="p-3 p-md-4  h-100 d-flex justify-content-between align-items-end flex-wrap">
+            <div class="text-container w-100 w-md-50 order-2 order-md-1">
+              <div class="tile-number">
+                96
+              </div>
+              <span>
+                Paesi nel mondo serviti dalle nostre farine
+              </span>
+            </div>
+            <div class="image-container align-self-start w-100 w-md-50 d-flex justify-content-end order-1 order-md-2">
+              <div class="w-50 w-md-100">
+                <img class="img-fluid" src="images/stripes/grid-1/tile-4-image.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- tile 3 - landscape -->
+        <div class="grid-tile bg-beige-3 tile-landscape">
+          <div class="p-3 p-md-4  h-100 d-flex justify-content-between align-items-end flex-wrap">
+            <div class="text-container w-100 w-md-50 order-2 order-md-1">
+              <div class="tile-number">
+                1
+              </div>
+              <span>
+                Impianto produzione interno di Lievito madre Essiccato
+              </span>
+            </div>
+            <div class="image-container align-self-start w-100 w-md-50 d-flex justify-content-end order-1 order-md-2">
+              <div class="w-50 w-md-100">
+                <img class="img-fluid" src="images/stripes/grid-1/tile-3-image.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- tile 5 - landscape -->
+        <div class="grid-tile bg-light-blue-grey-2 tile-landscape">
+          <div class="p-3 p-md-4  h-100 d-flex justify-content-between align-items-end flex-wrap">
+            <div class="text-container w-100 w-md-50 order-2 order-md-1">
+              <div class="tile-number">
+                20
+              </div>
+              <span>
+                Partner tecnici in tutta Italia
+              </span>
+            </div>
+            <div class="image-container align-self-start w-100 w-md-50 d-flex justify-content-end order-1 order-md-2">
+              <div class="w-50 w-md-100">
+                <img class="img-fluid" src="images/stripes/grid-1/tile-5-image.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- tile 6 - large -->
+        <div class="grid-tile bg-beige-2 tile-large">
+          <div class="p-3 p-md-4  h-100 d-flex justify-content-between align-items-end flex-wrap">
+            <div class="text-container w-100 w-md-50 order-2 order-md-1">
+              <div class="tile-number">
+                35
+              </div>
+              <span>
+                Referenze dedicate ai diversi utilizzi in pizzeria e dell’arte bianca
+              </span>
+            </div>
+            <div class="image-container align-self-start w-100 w-md-50 d-flex justify-content-end order-1 order-md-2">
+              <div class="w-50 w-md-100">
+                <img class="img-fluid" src="images/stripes/grid-1/tile-6-image.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- tile 7 - squared -->
+        <div class="grid-tile bg-light-khaki tile-squared">
+          <div class="p-3 p-md-4 h-100 d-flex flex-column justify-content-between">
+            <div class="image-container d-flex justify-content-end">
+              <div class="w-50 w-md-75">
+                <img class="img-fluid" src="images/stripes/grid-1/tile-7-image.png">
+              </div>
+            </div>
+            <div class="text-container">
+              <div class="tile-number d-flex align-items-start">
+                1<small style="font-size: 2rem;">a</small>
+              </div>
+              <span>
+                Community web dedicata ad appassionati e professionisti della pizza
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- STRIPE TWO COL -- 2 -->
+  <div class="bg-red position-relative">
+    <div class="position-inline position-md-absolute position-absolute-center d-flex align-items-center">
+      <div class="container">
+        <div class="row flex-row-reverse">
+          <div class="col-12 col-md-6 text-white py-5 px-3">
+            <h2 class="mb-4">SUPERIORI ANCHE NEL CONTROLLO QUALITÀ </h2>
+            <div>Le nostre farine sono ottenute dalla selezione dei grani delle migliori coltivazioni in Italia e nel
+              mondo. Ogni passaggio, dalla raccolta alla macinazione, viene sottoposto a rigorosi controlli qualità per
+              garantire una maggiore sicurezza, costanza e salubrità.
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row justify-content-start">
+        <div class="col-12 col-md-6 p-3 d-flex justify-content-center">
+          <img src="images/stripes/two-col-2/image.png" class="two-col-image m-2">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- GRID -- 2 -->
+  <div class="bg-painting bg-cover-center p-md-5 py-5">
+    <div class="container-fluid py-md-4 px-2">
+      <div class="grid">
+        <!-- tile 1 - squared -->
+        <div class="grid-tile bg-light-khaki tile-squared">
+          <div class="p-3 p-md-4  h-100 d-flex flex-column justify-content-between">
+            <div class="image-container align-self-start d-flex justify-content-end">
+              <div class="w-50 w-md-75">
+                <img class="img-fluid" src="images/stripes/grid-2/tile-1-image.png">
+              </div>
+            </div>
+            <div class="text-container">
+              <div class="tile-number">
+                1
+              </div>
+              <span>
+                Centro di Ricerca &amp; Sviluppo dedicato al mondo dei lievitati in pizzeria
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- tile 2 - squared -->
+        <div class="grid-tile bg-light-blue-grey tile-squared">
+          <div class="p-3 p-md-4  h-100 d-flex flex-column justify-content-between">
+            <div class="image-container d-flex justify-content-end">
+              <div class="w-50 w-md-75">
+                <img class="img-fluid" src="images/stripes/grid-2/tile-2-image.png">
+              </div>
+            </div>
+            <div class="text-container">
+              <div class="tile-number">
+                3
+              </div>
+              <span>
+                Tecnici Resident dedicati allo studio e alla promozione di farine e miscele per la pizza
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- tile 3 - landscape -->
+        <div class="grid-tile bg-beige tile-landscape">
+          <div class="p-3 p-md-4  h-100 d-flex justify-content-between align-items-end flex-wrap">
+            <div class="text-container w-100 w-md-50 order-2 order-md-1">
+              <div class="tile-number">
+                <small>300.000</small>
+              </div>
+              <span>
+                insaccate al giorno
+              </span>
+            </div>
+            <div class="image-container align-self-start w-100 w-md-50 d-flex justify-content-end order-1 order-md-2">
+              <div class="w-50 w-md-100">
+                <img class="img-fluid" src="images/stripes/grid-2/tile-3-image.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- tile 4 - landscape -->
+        <div class="grid-tile bg-light-khaki-2 tile-landscape">
+          <div class="p-3 p-md-4  h-100 d-flex justify-content-between align-items-end flex-wrap">
+            <div class="text-container w-100 w-md-50 order-2 order-md-1">
+              <div class="tile-number">
+                100%
+              </div>
+              <span>
+                Energia proveniente da fonti rinnovabili per la produzione
+              </span>
+            </div>
+            <div class="image-container align-self-start w-100 w-md-50 d-flex justify-content-end order-1 order-md-2">
+              <div class="w-50 w-md-100">
+                <img class="img-fluid" src="images/stripes/grid-2/tile-4-image.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- tile 5 - large -->
+        <div class="grid-tile bg-beige-2 tile-large">
+          <div class="p-3 p-md-4  h-100 d-flex justify-content-between align-items-end flex-wrap">
+            <div class="text-container w-100 w-md-50 order-2 order-md-1">
+              <div class="tile-number">
+                2
+              </div>
+              <span>
+                Mulini a Cilindri per diversificare la produzione e mantenere alti i livelli di qualità delle farine
+              </span>
+            </div>
+            <div class="image-container align-self-start w-100 w-md-50 d-flex justify-content-end order-1 order-md-2">
+              <div class="w-50 w-md-100">
+                <img class="img-fluid" src="images/stripes/grid-2/tile-5-image.png">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- tile 6 - squared -->
+        <div class="grid-tile bg-silver tile-squared">
+          <div class="p-3 p-md-4 h-100 d-flex flex-column justify-content-between">
+            <div class="image-container d-flex justify-content-end">
+              <div class="w-50 w-md-75">
+                <img class="img-fluid" src="images/stripes/grid-2/tile-6-image.png">
+              </div>
+            </div>
+            <div class="text-container">
+              <div class="tile-number">
+                100%
+              </div>
+              <span>
+                della carta utilizzata nei processi di insacco certificata FSC
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- STRIPE TWO COL -- 3 -->
+  <div class="bg-red position-relative">
+    <div class="position-inline position-md-absolute position-absolute-center d-flex align-items-center">
+      <div class="container">
+        <div class="row flex-row-reverse">
+          <div class="col-12 col-md-6 text-white py-5 px-3">
+            <h2 class="mb-4">
+              UNA FARINA AMICA DELL’AMBIENTE
+            </h2>
+            <div>
+              Crediamo in uno sviluppo sostenibile, per questo le nostre farine vengono prodotte utilizzando energia
+              proveniente esclusivamente da fonti rinnovabili e ci impegniamo ogni giorno a migliorare il nostro impatto
+              sull’ambiente. </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row justify-content-start">
+        <div class="col-12 col-md-6 p-3 d-flex justify-content-center">
+          <img src="images/stripes/two-col-3/image.png" class="two-col-image m-2">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FOOTER -->
+  <footer class="bg-white">
+    <div class="container">
+      <div class="row m-0 py-4 my-1 justify-content-md-between flex-column-reverse flex-md-row">
+        <div class="col-12 col-md-8 px-0 d-flex flex-column flex-md-row flex-md-wrap align-items-center">
+          <div class="my-2">
+            <a href="https://pizzastories.le5stagioni.it/it/discovery/pizza-stories-raccontiamo-una-passione"
+              target="_blank" class="link-black me-3 font-sm">Cos'è Pizza Stories</a>
+          </div>
+          <div class="my-2">
+            <a href="https://d2sj0xby2hzqoy.cloudfront.net/cinque_stagioni/attachments/data/000/000/325/original/privacy-policy.pdf?1604048791"
+              target="_blank" class="link-black me-3 font-sm">Privacy &amp; Cookie Policy</a>
+          </div>
+          <div class="my-2">
+            <a href="https://d2sj0xby2hzqoy.cloudfront.net/cinque_stagioni/attachments/data/000/000/324/original/note-legali.pdf?1604048725"
+              target="_blank" class="link-black me-3 font-sm">Note Legali</a>
+          </div>
+        </div>
+        <div
+          class="col-12 col-md-4 d-flex justify-content-md-end align-items-center justify-content-center mb-3 mb-md-0 px-0">
+          <div class="ms-md-4 mx-2 px-1 me-md-0 me-md-0">
+            <a href="https://www.facebook.com/le5stagioniofficial" target="_blank" class="link-black social-icon">
+              <i class="bi bi-facebook"></i>
+            </a>
+          </div>
+          <div class="ms-md-4 mx-2 px-1 me-md-0 me-md-0">
+            <a href="https://www.instagram.com/le5stagioni/?hl=it" target="_blank" class="link-black social-icon">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </div>
+          <div class="ms-md-4 mx-2 px-1 me-md-0 me-md-0">
+            <a href="https://www.youtube.com/user/agugiaro1" target="_blank" class="link-black social-icon">
+              <i class="bi bi-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+
 </html>
