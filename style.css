@@ -25,6 +25,14 @@
 
 /* utils */
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.font-weight-bold {
+  font-weight: bold;
+}
+
 .vh-75 {
   height: 75vh;
 }
@@ -188,6 +196,16 @@ nav a.navbar-item {
   color: #000;
 }
 
+.lang-icon {
+  width: 1.375rem;
+  height: 1.375rem;
+}
+
+svg.chevron-down {
+  width: 1rem;
+  height: 1rem;
+}
+
 .navbar-toggler {
   font-size: 1.5rem;
   border: none;
@@ -214,6 +232,10 @@ nav a.navbar-item {
 
   .navbar-collapse {
     border-top: 1px solid #aaa;
+  }
+
+  nav li:last-child {
+    display: none;
   }
 }
 
@@ -337,4 +359,44 @@ footer a:hover {
 
 footer a.social-icon {
   font-size: calc(1.2625rem + .15vw);
+}
+
+/* lang desktop menu */
+.layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(#353535, .9);
+  transition: all .5s;
+}
+
+.layer.hidden {
+  opacity: 0;
+  /*z-index: -1;*/
+}
+
+#lang-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 14rem;
+  background-color: #fff;
+  font-size: .875rem;
+  transition: all .5s;
+}
+
+#lang-sidebar.hidden {
+  right: -14rem;
+}
+
+#lang-sidebar .selected-lang {
+  opacity: .35;
+}
+
+#lang-sidebar a {
+  text-decoration: none;
+  color: #000;
 }

@@ -18,22 +18,10 @@
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
 
   <!-- Custom js -->
-  <script src="scripts/bodyscrolllock.min.js"></script>
   <script lang="javascript">
     function toggleNavbarBackground() {
       const navbar = document.getElementById("navbar");
       navbar.classList.toggle("background");
-    }
-    function toggleDesktopLangSidebar() {
-      const sidebar = document.getElementById("lang-sidebar");
-      const layer = document.getElementById("lang-layer");
-      sidebar.classList.toggle("hidden");
-      layer.classList.toggle("hidden");
-      if (sidebar.classList.contains("hidden")) {
-        bodyScrollLock.enableBodyScroll(sidebar);
-      } else {
-        bodyScrollLock.disableBodyScroll(sidebar);
-      }
     }
   </script>
 </head>
@@ -49,25 +37,21 @@
       </div>
     </div>
     <div class="position-absolute position-absolute-center layer"></div>
-    <div class="position-absolute position-absolute-center d-flex flex-column justify-content-center align-items-center">
-      <nav id="navbar" class="navbar navbar-expand-lg navbar-dark p-3 p-lg-5 mx-lg-4 d-flex justify-content-between align-items-center position-absolute">
+    <div
+      class="position-absolute position-absolute-center d-flex flex-column justify-content-center align-items-center">
+      <nav id="navbar"
+        class="navbar navbar-expand-lg navbar-dark p-3 p-lg-5 mx-lg-4 d-flex justify-content-between align-items-center position-absolute">
 
         <div class="d-lg-none position-relative pb-4">
           <!-- NOTE: this item acts as placeholder only -->
           <div class="nav-item hidden">
-            <a class="px-lg-4 mx-xl-2 navbar-item text-white" href="https://pizzastories.le5stagioni.it">PIZZASTORIES.it</a>
+            <a class="px-lg-4 mx-xl-2 navbar-item text-white"
+              href="https://pizzastories.le5stagioni.it">PIZZASTORIES.it</a>
           </div>
           <div class="position-absolute position-absolute-center d-flex align-items-center">
-            <button
-              onclick="toggleNavbarBackground()"
-              class="navbar-toggler text-white"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#mainNavbar"
-              aria-controls="mainNavbar"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
+            <button onclick="toggleNavbarBackground()" class="navbar-toggler text-white" type="button"
+              data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false"
+              aria-label="Toggle navigation">
               <i class="bi bi-list"></i>
             </button>
           </div>
@@ -82,8 +66,7 @@
         <div class="nav-item d-lg-none">
           <a class="px-lg-4 mx-xl-2 navbar-item text-white" href="https://pizzastories.le5stagioni.it">PIZZASTORIES.it</a>
         </div>
-        
-        <!-- Navbar items -->
+
         <div class="collapse navbar-collapse py-md-0 justify-content-end" id="mainNavbar">
           <ul class="navbar-nav py-3 py-lg-0">
             <li class="nav-item mx-xl-2">
@@ -98,9 +81,7 @@
             </li>
           </ul>
         </div>
-
-        <!-- lang toggler -->
-        <div class="mx-xl-2 d-none d-lg-block cursor-pointer" onclick="toggleDesktopLangSidebar()">
+        <div class="mx-xl-2 d-none d-lg-block cursor-pointer">
           <img src="images/flags/it.svg" class="lang-icon border border-dark rounded-circle"/>
           <svg class="chevron-down" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none"><path d="M4 9l8 8l8-8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
         </div>
@@ -600,43 +581,28 @@
     </div>
   </footer>
   <!-- LANG DESKTOP MENU -->
-  <div class="layer d-none d-lg-block hidden" id="lang-layer" @click="toggleDesktopLangSidebar()"></div>
-  <div class="position-fixed mh-100vh d-none d-lg-block hidden" id="lang-sidebar">
-    <div class="position-absolute h-100 w-100 p-4">
-      <!-- title -->
-      <div class="py-2 w-100 font-weight-bold position-relative d-flex justify-content-between align-items-center mb-4">
-        <div class="my-1">
+  <div class="layer"></div>
+  <div class="position-fixed mh-100vh" id="lang-sidebar">
+    <div class="position-absolute h-100 w-100 bg-body-bg">
+      <div class="px-3 py-2 border-bottom w-100 font-weight-bold position-relative d-flex">
+        <div class="mx-3 my-1">
           LINGUA
         </div>
-        <svg onclick="toggleDesktopLangSidebar()" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer" aria-hidden="true" role="img" width="1.25rem" height="1.25rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36"><path class="clr-i-outline clr-i-outline-path-1" d="M19.41 18l8.29-8.29a1 1 0 0 0-1.41-1.41L18 16.59l-8.29-8.3a1 1 0 0 0-1.42 1.42l8.3 8.29l-8.3 8.29A1 1 0 1 0 9.7 27.7l8.3-8.29l8.29 8.29a1 1 0 0 0 1.41-1.41z" fill="currentColor"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 36 36"><path class="clr-i-outline clr-i-outline-path-1" d="M19.41 18l8.29-8.29a1 1 0 0 0-1.41-1.41L18 16.59l-8.29-8.3a1 1 0 0 0-1.42 1.42l8.3 8.29l-8.3 8.29A1 1 0 1 0 9.7 27.7l8.3-8.29l8.29 8.29a1 1 0 0 0 1.41-1.41z" fill="currentColor"/></svg>
       </div>
-      
-      <!-- selected lang -->
-      <div class="d-flex align-items-center justify-content-between py-2 font-sm font-weight-bold border-bottom selected-lang">
-        <div class="my-1 d-flex align-items-center w-100 text-uppercase font-black d-flex">
+      <div class="d-flex align-items-center justify-content-between px-3 py-2 font-sm font-weight-bold border-bottom opacity-35">
+        <div class="mx-3 my-1 d-flex align-items-center w-100 text-uppercase font-black">
           <img src="images/flags/it.svg" class="lang-icon border border-dark rounded-circle"/>
-          <div class="ps-3">ITALIANO</div>
+          ITALIANO
         </div>
-        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1.25rem" height="1.25rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none"><path d="M4 12l6 6L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none"><path d="M4 12l6 6L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g></svg>
       </div>
-
-      <!-- other langs -->
-      <a class="d-block py-2 font-weight-bold font-sm w-100" href="index.en.html">
-        <div class="my-1 d-flex align-items-center w-100 text-uppercase link-black d-flex">
-          <img src="images/flags/gb.svg" class="lang-icon border border-dark rounded-circle"/>
-          <div class="ps-3">INGLESE</div>
-        </div>
-      </a>
-      <a class="d-block py-2 font-weight-bold font-sm w-100" href="index.en.html">
-        <div class="my-1 d-flex align-items-center w-100 text-uppercase link-black d-flex">
-          <img src="images/flags/es.svg" class="lang-icon border border-dark rounded-circle"/>
-          <div class="ps-3">SPAGNOLO</div>
-        </div>
-      </a>
-      <a class="d-block py-2 font-weight-bold font-sm w-100" href="index.en.html">
-        <div class="my-1 d-flex align-items-center w-100 text-uppercase link-black d-flex">
-          <img src="images/flags/fr.svg" class="lang-icon border border-dark rounded-circle"/>
-          <div class="ps-3">FRANCESE</div>
+      <a class="d-block px-3 py-2 font-weight-bold font-sm w-100" :href="">
+        <div class="mx-3 my-1 d-flex align-items-center w-100 text-uppercase link-black">
+          <svg class="lang-icon border border-dark rounded-circle">
+            <use :xlink:href="`#${item}`"></use>
+          </svg>
+          <span class="ml-3">{{ft(`globals.langs.${item}`)}}</span>
         </div>
       </a>
     </div>
