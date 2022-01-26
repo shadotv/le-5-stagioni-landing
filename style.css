@@ -193,7 +193,6 @@ nav a.navbar-item {
   text-decoration: none;
   font-size: 1.25rem;
   font-weight: bold;
-  color: #000;
 }
 
 .lang-icon {
@@ -234,8 +233,21 @@ svg.chevron-down {
     border-top: 1px solid #aaa;
   }
 
-  nav li:last-child {
+  nav li#pizzastories-link-desktop {
     display: none;
+  }
+
+  .selected-lang, .selected-lang svg {
+    transition: all .5s;
+  }
+
+  .selected-lang[aria-expanded=true] {
+    border-bottom: 1px solid white;
+    opacity: .35;
+  }
+
+  .selected-lang[aria-expanded=true] svg {
+    transform: rotate(180deg);
   }
 }
 
@@ -243,6 +255,10 @@ svg.chevron-down {
   nav .nav-item:hover {
     background-color: #c1252f;
     border-radius: 3px;
+  }
+
+  nav li#lang-switch-mobile {
+    display: none;
   }
 }
 
