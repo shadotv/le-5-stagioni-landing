@@ -1,4 +1,4 @@
-<html lang="fr"><head>
+<html lang="es"><head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,14 +8,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
   <!-- Custom stylesheet -->
-  <link href="style.css" rel="stylesheet">
+  <link href="../style.css" rel="stylesheet">
 
   <!-- SEO -->
   <title>Le 5 stagioni</title>
-  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
 
   <!-- Custom js -->
-  <script src="scripts/bodyscrolllock.min.js"></script>
+  <script src="../scripts/bodyscrolllock.min.js"></script>
   <script lang="javascript">
     function toggleNavbarBackground() {
       const navbar = document.getElementById("navbar");
@@ -41,13 +41,13 @@
     <div class="position-absolute position-absolute-center overflow-hidden">
       <div class="video-16by9 position-absolute-center h-100vh">
         <video loop="" playsinline="" muted="" autoplay="" id="videoloop">
-          <source src="images/loop_2_ok.mp4" type="video/mp4">
+          <source src="../images/loop_2_ok.mp4" type="video/mp4">
         </video>
       </div>
     </div>
     <div class="position-absolute position-absolute-center layer"></div>
     <div class="position-absolute position-absolute-center d-flex flex-column justify-content-center align-items-center">
-      <nav id="navbar" class="navbar navbar-expand-lg navbar-dark p-3 p-lg-5 mx-lg-4 d-flex justify-content-between align-items-center position-absolute background">
+      <nav id="navbar" class="navbar navbar-expand-lg navbar-dark p-3 p-lg-5 mx-lg-4 d-flex justify-content-between align-items-center position-absolute">
 
         <div class="d-lg-none position-relative pb-4">
           <!-- NOTE: this item acts as placeholder only -->
@@ -55,15 +55,15 @@
             <a class="px-lg-4 mx-xl-2 navbar-item text-white" href="https://pizzastories.le5stagioni.it">PIZZASTORIES.it</a>
           </div>
           <div class="position-absolute position-absolute-center d-flex align-items-center">
-            <button onclick="toggleNavbarBackground()" class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="true" aria-label="Toggle navigation">
+            <button onclick="toggleNavbarBackground()" class="navbar-toggler text-white collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
               <i class="bi bi-list"></i>
             </button>
           </div>
         </div>
 
         <h1 class="me-md-5">
-          <a href="index.fr.html">
-            <img class="logo" src="images/5-stagioni-logo.svg">
+          <a href="index.html">
+            <img class="logo" src="../images/5-stagioni-logo.svg">
           </a>
         </h1>
 
@@ -72,45 +72,45 @@
         </div>
         
         <!-- Navbar items -->
-        <div class="navbar-collapse py-md-0 justify-content-end collapse show" id="mainNavbar" style="">
+        <div class="navbar-collapse py-md-0 justify-content-end collapse" id="mainNavbar" style="">
           <ul class="navbar-nav pt-3 pt-lg-0">
             <li class="nav-item mx-xl-2">
-              <a class="px-lg-4 navbar-item text-white" href="https://pizzastories.le5stagioni.it/fr/produits">les FARINES</a>
+              <a class="px-lg-4 navbar-item text-white" href="https://pizzastories.le5stagioni.it/es/productos">Las HARINAS</a>
             </li>
             <li class="nav-item mx-xl-2">
-              <a class="px-lg-4 navbar-item text-white" href="https://pizzastories.le5stagioni.it/fr/support">NOUS CONTACTER</a>
+              <a class="px-lg-4 navbar-item text-white" href="https://pizzastories.le5stagioni.it/es/apoyo">CONTACTÁNOS</a>
             </li>
             <li class="nav-item mx-xl-2" id="pizzastories-link-desktop">
-              <a class="px-lg-4 navbar-item text-white" href="https://pizzastories.le5stagioni.it/fr">PIZZASTORIES.it</a>
+              <a class="px-lg-4 navbar-item text-white" href="https://pizzastories.le5stagioni.it/es">PIZZASTORIES.it</a>
             </li>
             <li class="nav-item mx-xl-2 border-top mt-4 pt-3" id="lang-switch-mobile">
-              <a data-bs-toggle="collapse" href="#mobileNavbarLangs" role="button" aria-expanded="true" aria-controls="mobileNavbarLangs" class="text-white py-2 navbar-item selected-lang d-flex">
+              <a data-bs-toggle="collapse" href="#mobileNavbarLangs" role="button" aria-expanded="false" aria-controls="mobileNavbarLangs" class="text-white py-2 navbar-item selected-lang d-flex collapsed">
                 <div class="w-100 d-flex align-items-center justify-content-between pb-3">
                   <div class="my-1 d-flex align-items-center w-100 text-uppercase d-flex">
-                    <img src="images/flags/fr.svg" class="lang-icon border border-dark rounded-circle">
-                    <div class="ps-3">FRANÇAIS</div>
+                    <img src="../images/flags/es.svg" class="lang-icon border border-dark rounded-circle">
+                    <div class="ps-3">ESPAÑOL</div>
                   </div>
                   <svg class="chevron-down" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1.25rem" height="1.25rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none"><path d="M4 9l8 8l8-8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg>
                 </div>
               </a>
             </li>
             <li class="nav-item mx-xl-2 collapse" id="mobileNavbarLangs" style="">
-              <a class="navbar-item text-white d-block py-2 mt-3 font-weight-bold font-sm w-100" href="index.en.html">
+              <a class="navbar-item text-white d-block py-2 mt-3 font-weight-bold font-sm w-100" href="../en/index.html">
                 <div class="my-1 d-flex align-items-center w-100 text-uppercase link-black d-flex">
-                  <img src="images/flags/gb.svg" class="lang-icon border border-dark rounded-circle">
-                  <div class="ps-3">ANGLAIS</div>
+                  <img src="../images/flags/gb.svg" class="lang-icon border border-dark rounded-circle">
+                  <div class="ps-3">INGLÉS</div>
                 </div>
               </a>
-              <a class="navbar-item text-white d-block py-2 font-weight-bold font-sm w-100" href="index.es.html">
+              <a class="navbar-item text-white d-block py-2 font-weight-bold font-sm w-100" href="../fr/index.html">
                 <div class="my-1 d-flex align-items-center w-100 text-uppercase link-black d-flex">
-                  <img src="images/flags/es.svg" class="lang-icon border border-dark rounded-circle">
-                  <div class="ps-3">ESPANOL</div>
+                  <img src="../images/flags/fr.svg" class="lang-icon border border-dark rounded-circle">
+                  <div class="ps-3">FRANCÉS</div>
                 </div>
               </a>
-              <a class="navbar-item text-white d-block py-2 font-weight-bold font-sm w-100" href="index.html">
+              <a class="navbar-item text-white d-block py-2 font-weight-bold font-sm w-100" href="../index.html">
                 <div class="my-1 d-flex align-items-center w-100 text-uppercase link-black d-flex">
-                  <img src="images/flags/it.svg" class="lang-icon border border-dark rounded-circle">
-                  <div class="ps-3">ITALIEN</div>
+                  <img src="../images/flags/it.svg" class="lang-icon border border-dark rounded-circle">
+                  <div class="ps-3">ITALIANO</div>
                 </div>
               </a>
             </li>
@@ -119,14 +119,14 @@
 
         <!-- lang toggler -->
         <div class="mx-xl-2 d-none d-lg-block cursor-pointer" onclick="toggleDesktopLangSidebar()">
-          <img src="images/flags/fr.svg" class="lang-icon border border-dark rounded-circle">
+          <img src="../images/flags/es.svg" class="lang-icon border border-dark rounded-circle">
           <svg class="chevron-down" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none"><path d="M4 9l8 8l8-8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg>
         </div>
       </nav>
       <div class="row justify-content-center">
         <div class="col-12 col-md-8 text-center">
-          <h2 class="text-white">LA PASSION POUR LA PIZZA</h2>
-          <h4 class="text-white">Une gamme historique de farines, de mélanges de farines et de levures, dédiée à tous les usages en pizzeria.</h4>
+          <h2 class="text-white">La pasión por la pizza</h2>
+          <h4 class="text-white">La histórica gama de harinas, mezclas y levaduras dedicada a todos los usos en las pizzerías.</h4>
         </div>
       </div>
     </div>
@@ -136,9 +136,9 @@
     <div class="container py-md-4">
       <div class="row justify-content-center">
         <div class="col-12 px-3">
-          <h3 class="text-red text-center fw-bold font-neutra-display">TRADITION ET INNOVATION<br class="d-none d-md-block">POUR VOS PIZZAS</h3>
+          <h3 class="text-red text-center fw-bold font-neutra-display">Tradición e innovación<br class="d-none d-md-block">para tus pizzas</h3>
         </div>
-        <div class="col-12 col-md-10 col-xl-8 px-3">Depuis la sélection des grains de blé, jusqu’à la production de la farine, nous efforçons toujours d’obtenir des farines de la plus haute qualité, permettant de réaliser des pizzas premium. Nous mettons un point d’honneur à investir dans la recherche et l'innovation de manière constante, ainsi qu’à travailler nos matières premières grâce aux dernières technologies.</div>
+        <div class="col-12 col-md-10 col-xl-8 px-3">Desde la selección de los granos hasta la producción de la harina, hemos recorrido un largo camino para obtener las harinas de mayor calidad, capaces de garantizar la producción de pizzas de calidad superior, gracias a la investigación constante, la innovación y las materias primas procesadas con las tecnologías más avanzadas.</div>
       </div>
     </div>
   </div>
@@ -148,8 +148,8 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-6 text-white py-5 px-3">
-            <h2 class="mb-4">LES MEILLEURES PIZZAS REQUIÈRENT DE BONNES FARINES</h2>
-            <div>Les farines 5 Stagioni ont été pensées et créées afin de pouvoir s’adapter aux diverses exigences des professionnels. Nous travaillons chaque jour pour développer des farines qui puissent sublimer la pizza en la rendant encore meilleure, tout en donnant la possibilité aux pizzaiolos de varier les plaisirs.</div>
+            <h2 class="mb-4">LA MEJOR PIZZA REQUIERE HARINAS BUENAS</h2>
+            <div>Las harinas Le 5 Stagioni han sido diseñadas y creadas para adaptarse a las diferentes necesidades de los profesionales. Trabajamos cada día para ofrecer harinas que hagan que la pizza sea mejor y más sabrosa y dar a los pizzeros la oportunidad de experimentar.</div>
           </div>
         </div>
       </div>
@@ -157,7 +157,7 @@
     <div class="container-fluid">
       <div class="row justify-content-end">
         <div class="col-12 col-md-6 p-3 d-flex justify-content-center">
-          <img src="images/stripes/two-col-1/image.png" class="two-col-image m-2">
+          <img src="../images/stripes/two-col-1/image.png" class="two-col-image m-2">
         </div>
       </div>
     </div>
@@ -173,11 +173,11 @@
               <div class="tile-number text-white">
                 600
               </div>
-              <span>Ans d’activité</span>
+              <span>Años de actividad</span>
             </div>
             <div class="image-container align-self-start w-100 w-md-50 d-flex justify-content-end order-1 order-md-2">
               <div class="w-50 w-md-100">
-                <img class="img-fluid" src="images/stripes/grid-1/tile-1-image-v2.png">
+                <img class="img-fluid" src="../images/stripes/grid-1/tile-1-image-v2.png">
               </div>
             </div>
           </div>
@@ -189,11 +189,11 @@
               <div class="tile-number">
                 2
               </div>
-              <span>Familles meunières&nbsp;</span>
+              <span>Familias de molineros</span>
             </div>
             <div class="image-container align-self-start w-100 w-md-50 d-flex justify-content-end order-1 order-md-2">
               <div class="w-50 w-md-100">
-                <img class="img-fluid" src="images/stripes/grid-1/tile-2-image-v2.png">
+                <img class="img-fluid" src="../images/stripes/grid-1/tile-2-image-v2.png">
               </div>
             </div>
           </div>
@@ -205,11 +205,11 @@
               <div class="tile-number text-white">
                 96
               </div>
-              <span>Pays dans lesquels est implantée l’entreprise</span>
+              <span>Países del mundo donde la empresa está presente</span>
             </div>
             <div class="image-container align-self-start w-100 w-md-50 d-flex justify-content-end order-1 order-md-2">
               <div class="w-50 w-md-100">
-                <img class="img-fluid" src="images/stripes/grid-1/tile-3-image-v2.png">
+                <img class="img-fluid" src="../images/stripes/grid-1/tile-3-image-v2.png">
               </div>
             </div>
           </div>
@@ -221,11 +221,11 @@
               <div class="tile-number">
                 1°
               </div>
-              <span>Marque de farines dédiées aux pizzas</span>
+              <span>Marca de harinas dedicadas a la Pizzería</span>
             </div>
             <div class="image-container align-self-start w-100 w-md-50 d-flex justify-content-end order-1 order-md-2">
               <div class="w-50 w-md-100">
-                <img class="img-fluid" src="images/stripes/grid-1/tile-4-image-v2.png">
+                <img class="img-fluid" src="../images/stripes/grid-1/tile-4-image-v2.png">
               </div>
             </div>
           </div>
@@ -237,11 +237,11 @@
               <div class="tile-number">
                 1°
               </div>
-              <span>Brevet de Mouture Intégrée&nbsp;</span>
+              <span>Patente de Molienda Integrada</span>
             </div>
             <div class="image-container align-self-start w-100 w-md-50 d-flex justify-content-end order-1 order-md-2">
               <div class="w-50 w-md-100">
-                <img class="img-fluid" src="images/stripes/grid-1/tile-5-image-v2.png">
+                <img class="img-fluid" src="../images/stripes/grid-1/tile-5-image-v2.png">
               </div>
             </div>
           </div>
@@ -253,11 +253,11 @@
               <div class="tile-number">
                 1°
               </div>
-              <span>Entreprise productrice de levure mère</span>
+              <span>Empresa para la producción de la levadura de Masa Madre</span>
             </div>
             <div class="image-container align-self-start w-100 w-md-50 d-flex justify-content-end order-1 order-md-2">
               <div class="w-50 w-md-100">
-                <img class="img-fluid" src="images/stripes/grid-1/tile-6-image-v2.png">
+                <img class="img-fluid" src="../images/stripes/grid-1/tile-6-image-v2.png">
               </div>
             </div>
           </div>
@@ -269,11 +269,11 @@
               <div class="tile-number text-white">
                 4
               </div>
-              <span>Usines productrices (Curtarolo, Collecchio, Rivolta d’Adda et Magione)</span>
+              <span>Plantas de producción (Curtarolo, Collecchio, Rivolta d’Adda e Magione)</span>
             </div>
             <div class="image-container align-self-start w-100 w-md-50 d-flex justify-content-end order-1 order-md-2">
               <div class="w-50 w-md-100">
-                <img class="img-fluid" src="images/stripes/grid-1/tile-7-image-v2.png">
+                <img class="img-fluid" src="../images/stripes/grid-1/tile-7-image-v2.png">
               </div>
             </div>
           </div>
@@ -285,11 +285,11 @@
               <div class="tile-number">
                 6
               </div>
-              <span>Moulins à cylindres</span>
+              <span>Molinos de cilindros</span>
             </div>
             <div class="image-container align-self-start w-100 w-md-50 d-flex justify-content-end order-1 order-md-2">
               <div class="w-50 w-md-100">
-                <img class="img-fluid" src="images/stripes/grid-1/tile-8-image-v2.png">
+                <img class="img-fluid" src="../images/stripes/grid-1/tile-8-image-v2.png">
               </div>
             </div>
           </div>
@@ -301,11 +301,11 @@
               <div class="tile-number">
                 3
               </div>
-              <span>Moulins à meule</span>
+              <span>Molinos de piedra</span>
             </div>
             <div class="image-container align-self-start w-100 w-md-50 d-flex justify-content-end order-1 order-md-2">
               <div class="w-50 w-md-100">
-                <img class="img-fluid" src="images/stripes/grid-1/tile-9-image-v2.png">
+                <img class="img-fluid" src="../images/stripes/grid-1/tile-9-image-v2.png">
               </div>
             </div>
           </div>
@@ -319,8 +319,8 @@
       <div class="container">
         <div class="row flex-row-reverse">
           <div class="col-12 col-md-6 text-white py-5 px-3">
-            <h2 class="mb-4">UN CONTRÔLE QUALITÉ SUPÉRIEUR</h2>
-            <div>Nos farines sont obtenues après sélection des meilleurs grains de blé en provenance d’Italie ou du reste du monde. Chaque étape, de la récolte à la mouture, est soumise à un contrôle qualité extrêmement strict nous permettant d’obtenir un produit final sain, possédant les meilleures caractéristiques possibles en fonction des grains de blé sélectionnés.</div>
+            <h2 class="mb-4">SUPERIORES EN EL CONTROL DE CALIDAD</h2>
+            <div>Nuestras harinas se obtienen a partir de la selección de granos de los mejores cultivos de Italia y del mundo. Cada paso, desde la cosecha hasta la molienda, se somete a estrictos controles de calidad para ofrecer un producto sano con las mejores características de los granos seleccionados.</div>
           </div>
         </div>
       </div>
@@ -328,7 +328,7 @@
     <div class="container-fluid">
       <div class="row justify-content-start">
         <div class="col-12 col-md-6 p-3 d-flex justify-content-center">
-          <img src="images/stripes/two-col-2/image.png" class="two-col-image m-2">
+          <img src="../images/stripes/two-col-2/image.png" class="two-col-image m-2">
         </div>
       </div>
     </div>
@@ -344,11 +344,11 @@
               <div class="tile-number">
                 <small>3</small>
               </div>
-              <span>Centres de recherche &amp; développement et de contrôle qualité&nbsp;</span>
+              <span>Centros de investigación y desarrollo y control de calidad</span>
             </div>
             <div class="image-container align-self-start w-100 w-md-50 d-flex justify-content-end order-1 order-md-2">
               <div class="w-50 w-md-100">
-                <img class="img-fluid" src="images/stripes/grid-2/tile-1-image-v2.png">
+                <img class="img-fluid" src="../images/stripes/grid-2/tile-1-image-v2.png">
               </div>
             </div>
           </div>
@@ -360,11 +360,11 @@
               <div class="tile-number">
                 <small>200</small>
               </div>
-              <span>Références dédiées à «&nbsp;l’art blanc&nbsp;» : produits de boulangerie, pâtisserie&nbsp;et pizzeria</span>
+              <span>Referencias dedicadas al mundo de la harina</span>
             </div>
             <div class="image-container align-self-start w-100 w-md-50 d-flex justify-content-end order-1 order-md-2">
               <div class="w-50 w-md-100">
-                <img class="img-fluid" src="images/stripes/grid-2/tile-2-image-v2.png">
+                <img class="img-fluid" src="../images/stripes/grid-2/tile-2-image-v2.png">
               </div>
             </div>
           </div>
@@ -374,14 +374,14 @@
           <div class="p-3 p-md-4  h-100 d-flex flex-column justify-content-between">
             <div class="image-container align-self-start d-flex justify-content-end">
               <div class="w-50 w-md-75">
-                <img class="img-fluid" src="images/stripes/grid-2/tile-3-image-v2.png">
+                <img class="img-fluid" src="../images/stripes/grid-2/tile-3-image-v2.png">
               </div>
             </div>
             <div class="text-container">
               <div class="tile-number text-white">
                 18.000
               </div>
-              <span>Arbres plantés</span>
+              <span>Árboles plantados</span>
             </div>
           </div>
         </div>
@@ -390,14 +390,14 @@
           <div class="p-3 p-md-4  h-100 d-flex flex-column justify-content-between">
             <div class="image-container d-flex justify-content-end">
               <div class="w-50 w-md-75">
-                <img class="img-fluid" src="images/stripes/grid-2/tile-4-image-v2.png">
+                <img class="img-fluid" src="../images/stripes/grid-2/tile-4-image-v2.png">
               </div>
             </div>
             <div class="text-container">
               <div class="tile-number text-white">
                 100%
               </div>
-              <span>- D’énergies issues de sources renouvelables.<br>- De papier certifié FSC utilisé dans les processus d’ensachage.<br>- De CO2 absorbé par «&nbsp;il Bosco del Molino&nbsp;».</span>
+              <span>- Energía procedente de fuentes renovables <br>- Papel certificado FSC para los procesos <br>- De las emisiones de CO2 absorbidas por Il Bosco del Molino</span>
             </div>
           </div>
         </div>
@@ -406,13 +406,13 @@
           <div class="p-3 p-md-4  h-100 d-flex justify-content-between align-items-end flex-wrap">
             <div class="text-container w-100 w-md-50 order-2 order-md-1">
               <div class="tile-number">
-                <small>BIO</small>
+                <small>ECOLÓGICO</small>
               </div>
-              <span>Filière protégée du Blé Biologique&nbsp;</span>
+              <span>Cadena de trigo ecológico</span>
             </div>
             <div class="image-container align-self-start w-100 w-md-50 d-flex justify-content-end order-1 order-md-2">
               <div class="w-50 w-md-100">
-                <img class="img-fluid" src="images/stripes/grid-2/tile-5-image-v2.png">
+                <img class="img-fluid" src="../images/stripes/grid-2/tile-5-image-v2.png">
               </div>
             </div>
           </div>
@@ -421,12 +421,14 @@
         <div class="grid-tile tile-landscape">
           <div class="p-3 p-md-4  h-100 d-flex justify-content-between align-items-end flex-wrap">
             <div class="text-container w-100 w-md-50 order-2 order-md-1">
-              <div class="tile-number">ITALIEN</div>
-              <span>Filière protégée du Blé Certifié Italien</span>
+              <div class="tile-number">
+                ITALIANO
+              </div>
+              <span>Cadena de trigo italiano certificado</span>
             </div>
             <div class="image-container align-self-start w-100 w-md-50 d-flex justify-content-end order-1 order-md-2">
               <div class="w-50 w-md-100">
-                <img class="img-fluid" src="images/stripes/grid-2/tile-6-image-v2.png">
+                <img class="img-fluid" src="../images/stripes/grid-2/tile-6-image-v2.png">
               </div>
             </div>
           </div>
@@ -438,11 +440,11 @@
               <div class="tile-number">
                 <small>1%</small>
               </div>
-              <span>Des ventes sont reversées pour participer au reboisement&nbsp;</span>
+              <span>De las ventas destinadas a la plantación</span>
             </div>
             <div class="image-container align-self-start w-100 w-md-50 d-flex justify-content-end order-1 order-md-2">
               <div class="w-50 w-md-100">
-                <img class="img-fluid" src="images/stripes/grid-2/tile-7-image-v2.png">
+                <img class="img-fluid" src="../images/stripes/grid-2/tile-7-image-v2.png">
               </div>
             </div>
           </div>
@@ -454,11 +456,11 @@
               <div class="tile-number">
                 <small>280.000</small>
               </div>
-              <span>Tonnes de blé moulu</span>
+              <span>Toneladas de trigo molido</span>
             </div>
             <div class="image-container align-self-start w-100 w-md-50 d-flex justify-content-end order-1 order-md-2">
               <div class="w-50 w-md-100">
-                <img class="img-fluid" src="images/stripes/grid-2/tile-8-image-v2.png">
+                <img class="img-fluid" src="../images/stripes/grid-2/tile-8-image-v2.png">
               </div>
             </div>
           </div>
@@ -468,13 +470,13 @@
           <div class="p-3 p-md-4  h-100 d-flex justify-content-between align-items-end flex-wrap">
             <div class="text-container w-100 w-md-50 order-2 order-md-1">
               <div class="tile-number">
-                <small>ANCIENS</small>
+                <small>ANTIGUOS</small>
               </div>
-              <span>Filière protégée des Blés Anciens</span>
+              <span>Cadena de granos antiguos</span>
             </div>
             <div class="image-container align-self-start w-100 w-md-50 d-flex justify-content-end order-1 order-md-2">
               <div class="w-50 w-md-100">
-                <img class="img-fluid" src="images/stripes/grid-2/tile-9-image-v2.png">
+                <img class="img-fluid" src="../images/stripes/grid-2/tile-9-image-v2.png">
               </div>
             </div>
           </div>
@@ -486,11 +488,11 @@
               <div class="tile-number text-white">
                 <small>4</small>
               </div>
-              <span>Années de soutien à Slow Food</span>
+              <span>Años como Patrocinador de Slow Food</span>
             </div>
             <div class="image-container align-self-start w-100 w-md-50 d-flex justify-content-end order-1 order-md-2">
               <div class="w-50 w-md-100">
-                <img class="img-fluid" src="images/stripes/grid-2/tile-10-image-v2.png">
+                <img class="img-fluid" src="../images/stripes/grid-2/tile-10-image-v2.png">
               </div>
             </div>
           </div>
@@ -505,8 +507,8 @@
       <div class="container">
         <div class="row flex-row-reverse">
           <div class="col-12 col-md-6 text-white py-5 px-3">
-            <h2 class="mb-4">UNE FARINE RESPECTUEUSE DE L'ENVIRONNEMENT</h2>
-            <div>Nous croyons au développement durable, c'est pourquoi nos farines sont produites grâce à des énergies exclusivement issues de sources renouvelables. Nous nous engageons chaque jour afin de réduire notre impact environnemental.</div>
+            <h2 class="mb-4">HARINA RESPETUOSA DEL MEDIO AMBIENTE</h2>
+            <div>Creemos en el desarrollo sostenible, por eso nuestras harinas se producen utilizando energía procedente exclusivamente de fuentes renovables y por eso nos comprometemos a mejorar cada día nuestro impacto sobre el medio ambiente.</div>
           </div>
         </div>
       </div>
@@ -514,7 +516,7 @@
     <div class="container-fluid">
       <div class="row justify-content-start">
         <div class="col-12 col-md-6 p-3 d-flex justify-content-center">
-          <img src="images/stripes/two-col-3/image.png" class="two-col-image m-2">
+          <img src="../images/stripes/two-col-3/image.png" class="two-col-image m-2">
         </div>
       </div>
     </div>
@@ -525,13 +527,13 @@
       <div class="row m-0 py-4 my-1 justify-content-md-between flex-column-reverse flex-md-row">
         <div class="col-12 col-md-8 px-0 d-flex flex-column flex-md-row flex-md-wrap align-items-center">
           <div class="my-2">
-            <a href="https://pizzastories.le5stagioni.it/fr/decouverte/pizza-stories-approfondissements-et-informations-sur-le-monde-de-la-pizza" target="_blank" class="link-black me-3 font-sm"> Qu’est ce que Pizza Stories ? </a>
+            <a href="https://pizzastories.le5stagioni.it/es/discovery/pizza-stories-contando-una-pasión" target="_blank" class="link-black me-3 font-sm"> ¿Qué es Pizza Stories? </a>
           </div>
           <div class="my-2">
-            <a href="https://d2sj0xby2hzqoy.cloudfront.net/cinque_stagioni/attachments/data/000/000/325/original/privacy-policy.pdf?1604048791" target="_blank" class="link-black me-3 font-sm"> Confidentialité et politique des cookies </a>
+            <a href="https://d2sj0xby2hzqoy.cloudfront.net/cinque_stagioni/attachments/data/000/000/325/original/privacy-policy.pdf?1604048791" target="_blank" class="link-black me-3 font-sm"> Política de privacidad y cookies </a>
           </div>
           <div class="my-2">
-            <a href="https://d2sj0xby2hzqoy.cloudfront.net/cinque_stagioni/attachments/data/000/000/324/original/note-legali.pdf?1604048725" target="_blank" class="link-black me-3 font-sm"> Notes légales </a>
+            <a href="https://d2sj0xby2hzqoy.cloudfront.net/cinque_stagioni/attachments/data/000/000/324/original/note-legali.pdf?1604048725" target="_blank" class="link-black me-3 font-sm"> Aviso legal </a>
           </div>
         </div>
         <div class="col-12 col-md-4 d-flex justify-content-md-end align-items-center justify-content-center mb-3 mb-md-0 px-0">
@@ -569,29 +571,29 @@
       <!-- selected lang -->
       <div class="d-flex align-items-center justify-content-between py-2 font-sm font-weight-bold border-bottom selected-lang">
         <div class="my-1 d-flex align-items-center w-100 text-uppercase font-black d-flex">
-          <img src="images/flags/fr.svg" class="lang-icon border border-dark rounded-circle">
-          <div class="ps-3">FRANÇAIS</div>
+          <img src="../images/flags/es.svg" class="lang-icon border border-dark rounded-circle">
+          <div class="ps-3">ESPAÑOL</div>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1.25rem" height="1.25rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none"><path d="M4 12l6 6L20 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></g></svg>
       </div>
 
       <!-- other langs -->
-      <a class="d-block py-2 font-weight-bold font-sm w-100" href="index.en.html">
+      <a class="d-block py-2 font-weight-bold font-sm w-100" href="../en/index.html">
         <div class="my-1 d-flex align-items-center w-100 text-uppercase link-black d-flex">
-          <img src="images/flags/gb.svg" class="lang-icon border border-dark rounded-circle">
-          <div class="ps-3">ANGLAIS</div>
+          <img src="../images/flags/gb.svg" class="lang-icon border border-dark rounded-circle">
+          <div class="ps-3">INGLÉS</div>
         </div>
       </a>
-      <a class="d-block py-2 font-weight-bold font-sm w-100" href="index.es.html">
+      <a class="d-block py-2 font-weight-bold font-sm w-100" href="../fr/index.html">
         <div class="my-1 d-flex align-items-center w-100 text-uppercase link-black d-flex">
-          <img src="images/flags/es.svg" class="lang-icon border border-dark rounded-circle">
-          <div class="ps-3">ESPANOL</div>
+          <img src="../images/flags/fr.svg" class="lang-icon border border-dark rounded-circle">
+          <div class="ps-3">FRANCÉS</div>
         </div>
       </a>
-      <a class="d-block py-2 font-weight-bold font-sm w-100" href="index.html">
+      <a class="d-block py-2 font-weight-bold font-sm w-100" href="../index.html">
         <div class="my-1 d-flex align-items-center w-100 text-uppercase link-black d-flex">
-          <img src="images/flags/it.svg" class="lang-icon border border-dark rounded-circle">
-          <div class="ps-3">ITALIEN</div>
+          <img src="../images/flags/it.svg" class="lang-icon border border-dark rounded-circle">
+          <div class="ps-3">ITALIANO</div>
         </div>
       </a>
     </div>
